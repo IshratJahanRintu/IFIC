@@ -1,0 +1,82 @@
+.buttonElement{
+    background-image: linear-gradient(to right, #D71921 10%, #700000);
+    border-radius: 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.8rem;
+    position: relative;
+    border:none;
+}
+
+.buttonArrow{
+    position: absolute;
+    right:10px;
+    top:12px;
+}
+
+.buttonElement:hover{
+    color: white;
+    /*border-color: #01a76d;*/
+    box-shadow:0 0 4px #00D28F;
+}
+
+/*.buttonElement:focus{*/
+/*    color: white;*/
+/*    border-color: #d28491;*/
+/*    box-shadow:0 0 5px #fcc7cf;*/
+/*}*/
+.resendOtp {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.resendOtp span {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+
+.resendOtp a {
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.resendOtp a:hover {
+    border: none;
+    padding: 0.2rem 1rem;
+    border-radius: 4px;
+    color: #347262;
+    font-weight: 500;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.otpButton{
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    color:#ffffff;
+    font-weight:500;
+    cursor: pointer;
+}
+.otpButton:disabled,
+.otpButton[disabled]{
+    opacity: 0.4;
+}
+

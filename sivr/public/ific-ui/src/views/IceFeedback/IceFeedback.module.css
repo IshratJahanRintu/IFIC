@@ -1,0 +1,220 @@
+.mtbFeedbackArea {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mtbFeedbackArea > img {
+    width: 200px;
+}
+
+@media all and (max-width: 768px) {
+    .mtbFeedbackArea > img {
+        width: 120px;
+    }
+}
+
+.gFeedbackHeader {
+    text-align: left;
+}
+
+.gFeedbackSurvey {
+    display: flex;
+    gap: 10px;
+    margin: 2rem 0;
+}
+
+@media all and (max-width: 768px){
+    .gFeedbackSurvey {
+        margin: 1rem 0;
+    }
+}
+
+.gFeedbackSurvey button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid #D9D9D9;
+    width: 70px;
+    height: 80px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    flex: 1;
+    transition: all 0.4s ease-in-out;
+    background: rgba(217, 217, 217, 0.2);
+}
+
+@media all and (max-width: 768px){
+    .gFeedbackSurvey button {
+        display: flex;
+        width: 60px;
+        height: 80px;
+    }
+
+    .gFeedbackSurvey > button > span {
+        font-size: 12px;
+        display: inline;
+    }
+}
+
+
+
+.gFeedbackSurvey button:hover {
+    border: 1px solid crimson;
+    background: rgba(217, 217, 217, 0.5);
+
+}
+
+
+.ivrCall {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #463a39;
+}
+
+.ivrCall:hover {
+    color: #221d1e;
+}
+
+.feedbackText {
+    color: #00652E;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+.ratingDiv {
+    margin: 2em auto;
+    max-width: 360px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+}
+
+.feedbackBg {
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    background-size: 15%, 70%, 15%;
+    background-image: url("./bottom-footer.svg"), url("./center-bg.svg"), url("./top-right.svg");
+    background-position: left bottom, center center, top right;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+}
+
+@media all and (max-width: 768px) {
+    .feedbackBg {
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        background-size: 30%, 80%, 30%;
+        background-image: url("./bottom-footer.svg"), url("./center-bg.svg"), url("./top-right.svg");
+        background-position: left bottom, center center, top right;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+}
+
+.ivrFeedbackMsg {
+    text-align: left;
+}
+
+.ivrFeedbackMsg input {
+    accent-color: crimson;
+}
+
+.ivrFeedbackMsg label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+@media all and (max-width: 768px){
+    .ivrFeedbackMsg label {
+      font-size: 13px;
+    }
+}
+
+.ivrFeedbackMsg button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-image: linear-gradient(to right, #D71921 10%, #700000);
+    color: #ffffff;
+}
+@media all and (max-width: 768px) {
+    .ivrFeedbackMsg button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        width: 100%;
+        border-radius: 0.5rem;
+        background-image: linear-gradient(to right, #D71921 10%, #700000);
+        color: #ffffff;
+    }
+}
+
+.ivrFeedbackMsg strong {
+    margin-bottom: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.ivrFeedbackMsg textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.ivrFeedbackMsg textarea:focus {
+    border: 1px solid #D9D9D9;
+    box-shadow: none;
+    outline: 1px solid crimson;
+}
+
+.feedbackButton {
+    /*border-color: #d48ba4;*/
+    /*box-shadow: 0 0 10px pink;*/
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: block;
+    box-shadow: 0 5px 9px 1px #63B0CF;
+    /*border: 1px solid #eaa0ad;*/
+    /*width: 110%;*/
+    color: #4D4C4D;
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+
+.feedbackButton img {
+    width: 45px;
+    height: auto;
+    object-fit: contain;
+}
+
+.feedbackIcon {
+    max-width: 75px;
+}

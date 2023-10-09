@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Lato',
+    'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*.container-fluid{*/
+/*    width: 95% !important;*/
+/*    margin: auto!important;*/
+/*}*/
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.footer-style {
+    display: flex;
+    justify-content: space-around;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    /*overflow:hidden;*/
+    /*position: relative;*/
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    html, body {
+        height: 100%;
+        width: 100%;
+        overflow:hidden;
+        /*position: relative;*/
+    }
+}
+
+
+.full-height {
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-attachment: fixed;
+    background-size: 15%, 85%, 15%;
+    background-image: url("views/LoginAuth/bottom-footer.svg"), url("views/LoginAuth/center-bg.svg"), url("views/LoginAuth/top-right.svg");
+    background-position: left bottom, center center, top right;
+}
+@media all and (max-width: 768px){
+    .full-height {
+        width: 100%;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-attachment: fixed;
+        background-size: 30%, 85%, 25%;
+        background-image: url("views/LoginAuth/bottom-footer.svg"), url("views/LoginAuth/center-bg.svg"), url("views/LoginAuth/top-right.svg");
+        background-position: left bottom, center center, top right;
+        height: 100vh;
+        overflow: hidden;
+        /*padding-top: 60px;*/
+    }
+}
+
+
+
+.mtb-copyright.fixed-bottom {
+    display: inline-block;
+    color: #474747;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    left: auto;
+    right:4%;
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    margin: auto;
+    text-align: right;
+}
+
+@media all and (max-width: 600px) {
+    .mtb-copyright.fixed-bottom {
+        color: #474747;
+        font-size: 9px;
+        font-family: 'Poppins', sans-serif;
+        bottom: 0;
+        position: fixed;
+        left: auto;
+        text-align: right;
+        right: 10px;
+        z-index: 5010;
+    }
+}
+
+.flex-menu-inner-area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*justify-content: space-around;*/
+    max-width: 600px;
+    margin: auto;
+}
+
+@media all and (max-width: 600px) {
+    .flex-menu-inner-area {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*justify-content: space-around;*/
+        max-width: 600px;
+        overflow-y: auto;
+        margin: auto;
+        /*Fixme: Should Kept Off*/
+        min-height: 70vh;
+        max-height: 70vh;
+    }
+}
+
+/*For Inner Page and Inner Button Segments*/
+.flex-menu-inner-area .innersubmit-btn {
+    background-image: linear-gradient(to right, #D71921 10%, #700000);
+    color: #ffffff;
+    height: auto !important;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 30px 0 15px 0 !important;
+    border-radius: 15px;
+}
+
+/*Loader Spinner*/
+.spinner-loader {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: -0.125em;
+    border: 0.25em solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: 0.75s linear infinite spinner-border;
+    color: #00734E;;
+    z-index: 5000;
+}
+
+
+
+
+/*============================
+     CrossBrowser ScrollBar
+  ============================*/
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  rgb(155, 25, 30) rgba(0, 0, 0, 0.099);
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;  /* for vertical scrollbars */
+    height:  auto; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+    background: rgba(0, 0, 0, 0.099);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgb(155, 25, 30);
+    border-radius: 30px;
+}
+
+/*============================
+         TpinInput
+  ============================*/
+
+.mtb-tpin-area{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mtb-tpin-area input {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #22b890;
+    border-radius: 4px;
+    outline: none;
+    margin: 1px 5px;
+    text-align: center;
+    background: #ffffff;
+    color: #00a075;
+    font-weight:500;
+    font-size: 20px;
+}
+
+.mtb-tpin-area-password input {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #22b890;
+    border-radius: 4px;
+    outline: none;
+    margin: 1px 5px;
+    text-align: center;
+    background: #ffffff;
+    color: #000000;
+    font-weight:500;
+    font-size: 20px;
+}
+
+
+.mtb-tpin-area .pin{
+    color:#ffffff;
+    font-size:20px;
+    text-align:center;
+}
+
+.react-confirm-alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3000;
+    background: rgba(255, 255, 255, 0.9);
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    opacity: 0;
+    animation: react-confirm-alert-fadeIn 0.5s 0.2s forwards;
+}
+
+.react-confirm-alert-body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    width: 100%!important;
+    padding: 30px;
+    text-align: left;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 75px rgba(0, 0, 0, 0.13);
+    color: #666;
+}
+
+
+
+
+
+
+/* Plugin Overwrite */
+.react-datepicker__input-container > input{
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0.8rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid #dddddd;
+}
+
+.react-datepicker__input-container > input:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/*TODO:Will be fixed*/
+
+@media all and (max-width: 768px) {
+    .g-digital-banking-right {
+      left: 10px;
+      top: auto;
+      bottom: 55px;
+      flex-direction: row;
+      gap: 0.5rem;
+    }
+  }

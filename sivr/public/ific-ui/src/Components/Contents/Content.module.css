@@ -1,0 +1,32 @@
+.ErrorPageArea{
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-size: 15%, 70%, 15%;
+    background-image: url("./bottom-footer.svg"), url("./center-bg.svg"), url("./top-right.svg");
+    background-position: left bottom, center center, top right;
+}
+@media all and (max-width: 768px){
+    .ErrorPageArea{
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        height: 100vh;
+        width: 100%;
+        background-color: #ffffff;
+        background-attachment: fixed;
+        overflow-x: hidden;
+        background-size: 30%, 100%, 30%;
+        background-image: url("./bottom-footer.svg"), url("./center-bg.svg"), url("./top-right.svg");
+        background-position: left bottom, center center, top right;
+    }
+}
+
+
+@media all and (max-width: 768px){
+    .errorPageMain > img{
+        width: 55%;
+
+    }
+}

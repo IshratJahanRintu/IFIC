@@ -1,0 +1,17 @@
+
+.bulletinDiv{
+    display: none;
+}
+@media (max-width: 600px) {
+    .bulletinDiv {
+        display: block;
+        bottom: 4em;
+        white-space: nowrap;
+        background: rgba(255,255,255, 1);
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.8em;
+        vertical-align: middle;
+    }
+}

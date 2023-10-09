@@ -1,0 +1,23 @@
+.topBanner {
+    /*background: rgba(0, 0, 0, 0.3)*/
+}
+
+.brandLogo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    /*max-height: 200px;*/
+    max-width: 100px;
+    z-index: 5010;
+    position: relative;
+}
+
+.toggleBtn {
+    /*margin-top: 1.25em;*/position: relative;
+    z-index: 5000;
+}
+
+.mtbTopHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

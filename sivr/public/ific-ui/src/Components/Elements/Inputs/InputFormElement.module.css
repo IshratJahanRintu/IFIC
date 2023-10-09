@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.inputForm {
+    border-radius: 10px !important;
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+    border:1px solid #700000;
+    background-color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.inputForm:focus {
+    outline: none;
+}
+
+.inputForm::placeholder {
+    text-align: center;
+}
+
+.phoneNoPrefix {
+    background-image: linear-gradient(#00D28F, #00734E);
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    z-index: 10;
+    font-weight: 500;
+}
+
+.phoneIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.exp_wrapper {
+    position: relative;
+    border: 1px solid #aaa;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    height: 36px;
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.exp-wrapper:after {
+    content: '/';
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    color: #aaa;
+}
+
+input.exp {
+    float: left;
+    font-family: monospace;
+    border: 0;
+    width: 18px;
+    outline: none;
+    appearance: none;
+    font-size: 14px;
+}
+
+
+
+

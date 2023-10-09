@@ -1,0 +1,19 @@
+.welcomeBgParent {
+    /*max-width: 990px;*/
+    height: auto;
+    margin: 0px auto;
+}
+
+
+.welcomeBg {
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    min-height: 720px;
+    position: fixed;
+    background-padding: center;
+    background-repeat: no-repeat;
+    top: -5%;
+    z-index: -1;
+
+}

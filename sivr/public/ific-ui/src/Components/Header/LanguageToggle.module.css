@@ -1,0 +1,87 @@
+.slider {
+    cursor: pointer;
+    /*background-color: #dd4578;*/
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.langBtn{
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.langText{
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    margin-left: auto;
+    font-weight: 600;
+    padding-right: 5px;
+}
+
+
+.slider::before {
+    /*position: absolute;*/
+    display: inline-block;
+    z-index: 3;
+    font-family: "FontAwesome";
+    content: "\f061";
+    height: 27px;
+    width: 27px;
+    left: 2px;
+    top:4px;
+    /* border: 1px solid #dd4578; */
+    background-color: #E85656;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+    box-shadow: 1px 3px 3px 0 rgba(0, 0, 0, 0.5);
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+input:checked + .slider {
+    /*background-color: #dd4578;*/
+    transition: all 0.4s ease-in-out;
+}
+
+
+input:checked + .langBtn {
+    transition: all 0.4s ease-in-out;
+}
+
+input:checked + .langBtn > .slider::before{
+    font-family: "FontAwesome", sans-serif;
+    content: "\f060";
+    transform: translateX(40px);
+}
+input:checked + .langBtn > .langText{
+    transform: translateX(-40px);
+}
+
+input:checked + .slider::before {
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: 28px;
+    transition: all 0.4s ease-in-out;
+    bottom: 15px;
+}
+
+.switch .toggleInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}

@@ -1,0 +1,40 @@
+.bottomFooter {
+    /*border-top: 1px solid #94a1af;*/
+    background: transparent;
+    /*background: rgb(165, 82, 61);*/
+
+
+}
+
+@media all and (max-width: 768px) {
+    .bottomFooter {
+        /*border-top: 1px solid #dddddd;*/
+        box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.085);
+        background-color: #ffffff;
+        background-image: url("./bottom-footer.svg");
+        background-position: left bottom;
+        background-size: 30%;
+        background-repeat: no-repeat;
+    }
+}
+
+.toggleBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LanguageToggle_switch__2LdOI {
+    position: relative;
+    display: inline-block;
+    width: auto !important;
+    height: 28px;
+    transition: all 0.4s ease-in-out;
+}
+

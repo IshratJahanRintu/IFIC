@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+.loginBg {
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    background-size: 15%, 85%, 15%;
+    background-image: url("./bottom-footer.svg"), url("./center-bg.svg"), url("./top-right.svg");
+    background-position: left bottom, center center, top right;
+    /*z-index: -3;*/
+}
+
+@media all and (max-width: 768px){
+    .loginBg {
+        background-size: 45%, 80%, 30%;
+    }
+}
+
+.welcomeBgParent {
+    max-width: 990px !important;
+    height: auto;
+    margin: 0 auto;
+    z-index: 0;
+    position: relative;
+}
+
+
+.welcomeBg {
+    /*max-width: 990px;*/
+    background-position: top center;
+    min-height: 720px;
+    position: absolute;
+    /*top: -85px;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    /*min-height: 750px;*/
+    /*z-index: -2;*/
+
+}
+
+.greetings {
+    margin-top: 20px;
+    font-size: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+}
+
+@media (max-width: 700px) {
+    .welcomeBg {
+        /*background: url('./image/main-bg-sm.jpg') no-repeat bottom center !important;*/
+        z-index: -2;
+        background-size: cover !important;
+        height: 100% !important;
+        width: 100%;
+        background-attachment: initial !important;
+        background-position: 50% -1.5em !important;
+        min-height: 896px !important;
+        max-height: 896px !important;
+    }
+}
+
+
+@media (max-width: 379px) {
+    .welcomeBg {
+        max-height: 750px !important;
+    }
+
+    .pageHeading {
+        font-size: 24px !important;
+        font-weight: 500;
+        margin-bottom: 2em;
+        text-transform: uppercase;
+    }
+}

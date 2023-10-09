@@ -1,0 +1,18 @@
+
+.pageDescription {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    margin: 1rem 0;
+    background: -webkit-linear-gradient(#D71921, #700000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (min-width: 300px) and (max-width: 480px) {
+    .pageDescription {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        margin: 0  0 0.5rem 0;
+        color: #ffffff;
+        font-size: 12px;
+    }
+}

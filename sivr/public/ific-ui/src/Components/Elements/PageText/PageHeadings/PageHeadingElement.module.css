@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Lato:wght@400;700&display=swap');
+
+.pageHeading {
+    text-align: center;
+    color: #292929;
+    margin-top: 0.5em;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position:relative;
+    border-bottom: 3px solid #ccc;
+    display: inline-block;
+    width: auto;
+    padding-bottom: 5px;
+}
+
+.pageHeading::before{
+    position: absolute;
+    background: -webkit-linear-gradient(#D71921, #700000);
+    height: 3px;
+    content: '';
+    width: 50%;
+    bottom: -3px;
+    left: 0;
+}
+
+.pageHeadingLogin {
+    font-family: 'Lato', sans-serif;
+    background: -webkit-linear-gradient(#D71921, #700000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 3rem!important;
+}
+
+@media (max-width: 600px) {
+    .pageHeading {
+        text-transform: uppercase;
+    }
+
+    .pageHeadingLogin {
+        margin-top: 15px;
+        text-transform: uppercase;
+        color: #ffffff;
+        font-size: 2rem!important;
+    }
+}

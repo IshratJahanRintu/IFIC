@@ -1,0 +1,230 @@
+.buttonElement {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.95em;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 100px;
+    width: calc(50% - 20px);
+    margin: 10px 10px 10px;
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 4px;
+    text-align: center;
+}
+
+@media all and (max-width: 600px) {
+    .buttonElement {
+        background-color: rgba(255, 255, 255, 1);
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 0.95em;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        height: 90px;
+        width: calc(50% - 20px);
+        margin: 10px 10px 10px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4px;
+        text-align: center;
+    }
+}
+
+
+/*iphone 5c, 5s*/
+@media screen and (device-aspect-ratio: 40/71) {
+    .buttonElement {
+        background-color: rgba(255, 255, 255, 1);
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 0.95em;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        height: auto;
+        width: calc(50% - 20px);
+        margin: 10px 10px 10px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 4px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .buttonElement {
+        min-height: 70px;
+    }
+}
+
+
+/*=============================================
+        All Styles For Inner Button Elements
+  =============================================*/
+.innerButtonElement {
+    background-color: rgba(255, 255, 255, 1);
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    height: 60px !important;
+    width: calc(50% - 20px);
+    margin: 10px 10px 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 4px 4px 4px 0;
+    text-align: center;
+    gap:1rem;
+}
+
+/*iphone 5c, 5s*/
+@media screen and (device-aspect-ratio: 40/71) {
+    .innerButtonElement {
+        background-color: rgba(255, 255, 255, 1);
+        color: #000000;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        height: 60px !important;
+        width: 100%;
+        margin: 10px 10px 10px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 2px 2px 2px 0;
+        text-align: center;
+        gap:1rem;
+    }
+
+}
+
+@media all and (max-width: 600px) {
+    .innerButtonElement {
+        height: 60px !important;
+        font-size: 0.8rem;
+    }
+}
+
+.mtbMenuText {
+    margin-bottom: 0;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+
+.mtbMenuTextInner {
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+.buttonElement:active {
+    background-color: #820000;
+    color: #ffffff;
+}
+
+.buttonElement:hover {
+    background-color: #820000;
+    color: #ffffff;
+}
+
+.menuButtonGroup {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerMenuButtonGroup {
+    flex-basis: 33.33333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 600px) {
+    .menuButtonGroup {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .innerMenuButtonGroup {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.iconBtnDiv {
+    width: 10%;
+    float: left;
+}
+
+.iconBtn {
+    /*background-image: url("public/image/test.PNG");*/
+    padding: 0;
+    border: 0;
+}
+
+.textBtnDiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuIcon {
+    max-width: 100%;
+}
+
+.triggerIcon {
+    max-width: 100%;
+    height: auto;
+}
+
+@media all and (max-width: 768px){
+    .buttonElement > .triggerIcon {
+        max-width: 45px;
+        height: auto;
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .triggerIcon {
+        width: 30px;
+        height: auto;
+        object-fit: contain;
+        -o-object-fit: contain;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+}
+
+
+
+

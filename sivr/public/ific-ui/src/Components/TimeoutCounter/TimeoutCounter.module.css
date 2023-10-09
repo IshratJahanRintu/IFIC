@@ -1,0 +1,16 @@
+.timeOutText {
+    color: white;
+    font-size: 1em;
+    text-shadow: #000 1px 0 10px;
+    font-weight: 450 !important;
+}
+
+.sessionTime {
+    min-width: 43px;
+}
+
+.sessionTimeTitle {
+    min-width: 138px;
+    padding-right: 5px;
+    text-align: right;
+}

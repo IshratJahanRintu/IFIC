@@ -1,0 +1,10 @@
+/*=========================================
+      Custom Fonts For Debit/Credit Card
+  =========================================*/
+@font-face {
+    font-family: 'credit_card';
+    src: url('../fonts/credc___-webfont.woff2') format('woff2'),
+    url('../fonts/credc___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

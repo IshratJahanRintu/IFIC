@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+        	#Header set Access-Control-Allow-Origin "http://localhost:3001"
+    <IfModule mod_headers.c>
+	    SetEnvIf Origin "(http(s)?://localhost:3000)|(http(s)?://192.168.11.38)$" AccessControlAllowOrigin=$0
+	    Header set Access-Control-Allow-Origin %{AccessControlAllowOrigin}e env=AccessControlAllowOrigin
+	    #Header add Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+	    #Header add Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Authorization, Accept"
+	    #Header add Access-Control-Expose-Headers "Content-Disposition"
+	    #Header merge Vary Origin
+    </IfModule>
+    RewriteEngine On
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

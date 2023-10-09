@@ -1,0 +1,150 @@
+.elementsContainer {
+    margin-top: 6.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    /*max-height: 80vh;*/
+    /*min-height: 80vh;*/
+    /*padding-top: 60px;*/
+
+}
+
+@media all and (min-width: 768px) {
+    .elementsContainer {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        max-height: 60vh;
+        min-height: 60vh;
+    }
+}
+
+/*.elementsRootContainer {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background: no-repeat 0px 0%;*/
+/*    bottom: -40%;*/
+/*    !*right: 0%;*!*/
+/*    position: fixed;*/
+/*    z-index: -1;*/
+/*    !* background-size: cover; *!*/
+/*    background-position: center;*/
+/*}*/
+
+
+.flexMenuArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+    max-height: calc(100vh - 425px);
+    overflow-y: auto;
+}
+
+@media all and (max-width: 600px) {
+    .flexMenuArea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        margin: 0 -10px;
+        max-height: calc(100vh - 260px);
+        overflow-y: auto;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+/* iphone 6, 6s, 7, 8 */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+
+    .flexMenuArea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 -10px;
+        height: calc(100vh - 260px);
+        overflow-y: auto;
+        position: relative;
+        z-index: 3;
+    }
+
+}
+
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (-webkit-device-pixel-ratio: 3) {
+    .flexMenuArea {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 -10px;
+        height: calc(100vh - 230px);
+        overflow-y: auto;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+
+.flexMenuAreaInner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -10px;
+    overflow-y: auto;
+    max-height: calc(100vh - 425px);
+}
+
+
+@media all and (max-width: 600px) {
+    .flexMenuAreaInner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: calc(100vh - 265px);
+        overflow-y: auto;
+        margin: 0 -10px 15px;
+    }
+
+}
+
+/*For iPhone 6, 6s 7, 8*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    .flexMenuAreaInner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: calc(100vh - 270px);
+        overflow-y: auto;
+        margin: 0 -10px 15px;
+    }
+}
+
+/*iphone 5c, 5s*/
+@media screen and (device-aspect-ratio: 40/71) {
+    .flexMenuAreaInner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: calc(100vh - 10px);
+        overflow-y: auto;
+        margin: 0 -10px 15px;
+    }
+}
+
+
+.loginFormArea {
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media all and (max-width: 768px){
+    .ctaArea{
+        display: none;
+    }
+}

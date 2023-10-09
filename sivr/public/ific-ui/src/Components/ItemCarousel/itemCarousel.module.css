@@ -1,0 +1,37 @@
+.sliderBtn{
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .sliderBtn{
+        padding:3px;
+        font-size:8px;
+    }
+}
+
+.carouselWrapper {
+    width: 100%;
+}
+
+.carouselIcon{
+    width: 35px;
+    height: auto;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    .carouselIcon{
+        width: 25px;
+        height: auto;
+    }
+
+    .sliderBtn{
+        padding:3px;
+    }
+
+}
